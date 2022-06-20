@@ -20,6 +20,9 @@ body {
   line-height: 1.7;
   background-image: url(../images/bg-intro-desktop.png), linear-gradient(var(--color-red), var(--color-red)); }
 
+  .invalid.place-holder::placeholder {
+    color: var(--color-red);
+ }
 .container {
   display: grid;
   grid-template-columns: [full-start] 1fr [center-start] repeat(2, [col-start] minmax(min-content, 40vw) [col-end]) [center-end] 1fr [full-end];
