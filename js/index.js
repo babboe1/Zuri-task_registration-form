@@ -21,6 +21,7 @@ form.addEventListener('submit', (e) => {
 
     if(form['email'].value === "") {
         form['email'].classList.add('invalid');
+        form['email'].classList.add('place-holder');
         form['email'].placeholder = 'email@example/com'
         error = true;
     } else {
@@ -29,6 +30,7 @@ form.addEventListener('submit', (e) => {
         
         if(!isValidEmail) {
             form['email'].classList.add('invalid');
+            form['email'].classList.add('place-holder');
             form['email'].placeholder = 'email@example/com'
             error = true;
         } else {
