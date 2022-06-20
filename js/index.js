@@ -21,6 +21,7 @@ form.addEventListener('submit', (e) => {
 
     if(form['email'].value === "") {
         form['email'].classList.add('invalid');
+        form['email'].placeholder = 'email@example/com'
         error = true;
     } else {
         const emailTestRe = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
